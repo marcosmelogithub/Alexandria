@@ -1,16 +1,18 @@
 # Mapeamento de Processos de Negócio com IA
 ---
 
-### 1. Panorama Atual do Uso de IA no Mapeamento de Processos
+## 1. Panorama Atual do Uso de IA no Mapeamento de Processos
+---
 
 A aplicação de Inteligência Artificial no mapeamento e gestão de processos de negócios (BPM) mudou o foco da **documentação manual** para a **descoberta e otimização automatizadas**. O ecossistema atual se divide em três principais frentes:
 
 * **Process Mining + IA Generativa:** Plataformas consolidadas como *Celonis*, *UiPath* e *Microsoft Power Automate* combinam *Process Mining* (análise de logs de sistemas como SAP e Salesforce) com IA generativa. A IA cruza dados de eventos reais, detecta gargalos operacionais e traduz insights técnicos em relatórios executivos em linguagem natural.
 * **Geração de Diagramas via Prompt (Text-to-Flow):** Ferramentas como *Miro AI*, *Lucidchart*, *Whimsical* e *ShiftX* permitem gerar fluxogramas e diagramas BPMN a partir de transcrições de reuniões, políticas internas ou descrições em texto simples, reduzindo o tempo inicial de modelagem.
 * **Simulação e Diagnóstico de Impacto:** IAs preditivas analisam cenários *"What-If"*. É possível simular como a mudança em uma etapa da cadeia de suprimentos ou no atendimento ao cliente afetará o tempo total do ciclo e os custos antes de implementar a alteração.
----
-### 2. Exemplo prático de prompt
 
+---
+## 2. Exemplo prático de prompt
+---
 A forma mais eficiente de gerar diagramas em sintaxe BPMN via IA generativa é solicitar a saída no formato **Mermaid.js** ou **PlantUML**. Esse código pode ser colado diretamente em editores visuais (como Mermaid Live Editor, Draw.io ou Notion) para renderizar o diagrama automaticamente.
 
 Abaixo está a estrutura completa do prompt e o resultado esperado.
@@ -104,7 +106,7 @@ graph TD
     end
 
 ---
-### 3. Converter para BPMN 2.0 (Cmaunda ou Bizagi)
+## 3. Converter para BPMN 2.0 (Cmaunda ou Bizagi)
 ---
 
 Para converter um diagrama gerado em Mermaid.js para o formato padrão **BPMN 2.0 (XML)** compatível com Camunda ou Bizagi, é necessário realizar uma conversão de estrutura, pois o Mermaid utiliza uma sintaxe simplificada focada em visualização, enquanto o XML BPMN é um padrão rigoroso que armazena metadados operacionais e coordenadas visuais.
@@ -158,7 +160,7 @@ Se você preferir não usar o prompt de conversão direta em XML, existem duas r
 2. **Desenho Rápido via bpmn.io:** Se o XML gerado pela IA apresentar falhas de renderização de layout (posicionamento das caixas), você pode colar a descrição textual do processo na ferramenta **bpmn.io/demo** ou usar extensões de IA integradas ao Camunda para gerar o fluxo do zero direto na interface gráfica.
 
 ---
-### 4. Além do Fluxo BPMN, agregar propriedades estendido (Documentação/Descrição)
+## 4. Além do Fluxo BPMN, agregar propriedades estendido (Documentação/Descrição)
 ---
 Sim, é totalmente possível. No **Bizagi Modeler**, assim como no **Camunda** e em outras ferramentas BPMN profissionais, cada elemento do fluxo (uma tarefa, um gateway ou um evento) possui um **painel de propriedades estendido** (Documentação/Descrição) onde são armazenados textos explicativos, regras de negócio, responsáveis, prazos e insumos.
 
@@ -242,9 +244,9 @@ Se você precisa entregar um **Manual de Processos (POP - Procedimento Operacion
 
 
 ---
-### Curadoria
-
-#### 2. Literatura Recomendada (Português e Inglês)
+## Curadoria
+---
+#### 1. Literatura Recomendada (Português e Inglês)
 
 Atualmente, **não existem livros focados exclusivamente no nicho de "IA para Mapeamento de Processos"**, pois o mercado evolui em ritmo acelerado. As melhores referências dividem-se em fundamentos de BPM/Mapeamento e aplicação prática de IA/Process Mining:
 
@@ -260,7 +262,7 @@ Atualmente, **não existem livros focados exclusivamente no nicho de "IA para Ma
 * **Artigos e Whitepapers de Mercado:** Publicações de consultorias como *Gartner*, *McKinsey* e os blogs técnicos da *Celonis* contêm estudos de caso atualizados sobre GenAI aplicada à gestão de processos.
 
 
-#### 3. Cursos Recomendados
+#### 2. Cursos Recomendados
 
 Não vale a pena investir em cursos genéricos e caros de "Process Mapping tradicional" esperando aprender IA. As opções mais relevantes se concentram no aprendizado do uso de **ferramentas modernas (Process Mining e GenAI)**:
 
